@@ -15,7 +15,7 @@
     "node": "*"
   },
   "dependencies": {
-    "request": "~2.9.3"
+    "request": "~2.53"
   },
   "devDependencies": {
     "coffee-script": "~1.2.0"
