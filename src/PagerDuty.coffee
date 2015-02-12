@@ -100,6 +100,15 @@ class PagerDuty
         email: email
         requester_id: requesterId
 
+  getServices: ({query, offset, limit, callback}) ->
+    @_getRequest
+      resource: 'services'
+      callback: callback
+      qs:
+        query: query
+        offset: offset
+        limit: limit
+
   createService: ({name, escalationPolicyId, type, serviceKey, callback}) ->
     @_postRequest
       resource: 'services'
