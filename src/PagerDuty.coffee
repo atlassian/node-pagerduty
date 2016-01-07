@@ -76,7 +76,7 @@ class PagerDuty
 
   getEscalationPoliciesOnCall: ({query, offset, limit, callback}) ->
     @_getRequest
-      resource: 'escalation_policies/oncall'
+      resource: 'escalation_policies/on_call'
       callback: callback
       qs:
         query: query
