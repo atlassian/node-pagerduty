@@ -74,6 +74,15 @@ class PagerDuty
         offset: offset
         limit: limit
 
+  getEscalationPoliciesOnCall: ({query, offset, limit, callback}) ->
+    @_getRequest
+      resource: 'escalation_policies/oncall'
+      callback: callback
+      qs:
+        query: query
+        offset: offset
+        limit: limit
+
   createEscalationPolicy: ({name, escalationRules, callback}) ->
     @_postRequest
       resource: 'escalation_policies'
